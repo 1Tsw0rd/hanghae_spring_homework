@@ -1,0 +1,37 @@
+[
+  {
+    "member": {
+      "memberId": "aaaa1111",
+      "memberPassword": "aaAA1111"
+    },
+    "mPassword": "1111",
+    "mTitle": "타이틀1111",
+    "mContents": "내용1111"
+  },
+  {
+    "member": {
+      "memberId": "bbbb2222"
+    },
+    "mPassword": "2222",
+    "mTitle": "타이틀2222",
+    "mContents": "내용2222"
+  },
+  {
+    "member": {
+      "memberId": "cccc3333",
+      "memberPassword": "ccCC3333"
+    },
+    "mPassword": "3333",
+    "mTitle": "타이틀3333",
+    "mContents": "내용3333"
+  },
+  {
+    "member": {
+      "memberId": "dddd4444",
+      "memberPassword": "ddDD4444"
+    },
+    "mPassword": "4444",
+    "mTitle": "타이틀4444",
+    "mContents": "내용4444"
+  }
+]
