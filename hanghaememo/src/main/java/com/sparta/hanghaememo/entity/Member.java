@@ -30,8 +30,8 @@ public class Member extends Timestamped{
     @OneToMany(mappedBy = "member")
     private List<Memo> memos = new ArrayList<>();
 
-    @OneToMany(mappedBy = "member")
-    private List<Comment> comments = new ArrayList<>();
+//    @OneToMany(mappedBy = "member")
+//    private List<Comment> comments = new ArrayList<>();
 
 
     public Member(MemberRequestDto memberReqDto, MemberRoleEnum role) {

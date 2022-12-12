@@ -41,7 +41,6 @@ public class HanghaememoApplication {
     private MemoRepository memoRepository;
 
     @Bean
-    @Builder
     public ApplicationRunner applicationRunnerMember(){
         return args -> {
             //노트북 전용(file:)
