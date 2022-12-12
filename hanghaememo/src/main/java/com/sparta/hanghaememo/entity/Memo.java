@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.DynamicInsert;
+import org.springframework.boot.context.properties.bind.DefaultValue;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -34,8 +37,16 @@ public class Memo extends Timestamped {
     @JoinColumn(name = "member_id", nullable = false)
     private Member member;
 
-    @OneToMany(mappedBy = "memo")
-    private List<Comment> comments = new ArrayList<>();
+    /**자기참조 테스트 디폴트 처리 필요
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "pcno")
+    private Memo reMemo;
+
+    @OneToMany(mappedBy = "reMemo")
+    private List<Memo> memoList = new ArrayList<>();
+     */
+//    @OneToMany(mappedBy = "memo")
+//    private List<Comment> comments = new ArrayList<>();
 
     //createdAt 생성일자
     //modifiedAt 수정일자
